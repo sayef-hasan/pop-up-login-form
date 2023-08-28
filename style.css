@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins', sans-serif;
+}
+
+.btn-login {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-color: none;
+    color: black;
+    background-color: #00e1ffe0;
+    border: none;
+    box-shadow: 1px 1px 6px;
+}
+
+.overlay {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    z-index: 2;
+    opacity: 0;
+    transition: 1s;
+}
+
+.showoverlay {
+    z-index: 999;
+    opacity: 1;
+}
+
+.loginform {
+    width: 350px;
+    padding: 30px 20px;
+    background-color: #fff;
+    position: absolute;
+    transition: 2s;
+    left: 50%;
+    z-index: 9;
+    top: -50%;
+    box-shadow: 0px 0px 10px 3px #ccc;
+    transform: translate(-50%, -50%);
+}
+
+.showloginform {
+    top: 50%;
+}
+
+.loginform input {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 35px;
+}
+
+.loginform button {
+    background-color: black;
+    padding: 10px 15px;
+}
+
+.loginform span {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    cursor: pointer;
+    line-height: 30px;
+    background-color: rgb(47, 255, 120);
+    text-align: center;
+    top: 0;
+}
